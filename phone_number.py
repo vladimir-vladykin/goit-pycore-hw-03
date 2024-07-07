@@ -6,7 +6,7 @@ def normalize_phone(phone_number: str) -> str:
     plus_sign = "+"
     internation_code = "38"
 
-    # lstrip() simplifies handling of cases when there's some spaces beform '+' sign
+    # lstrip() simplifies handling of cases when there's some spaces before '+' sign
     matches = re.findall(pattern, phone_number.lstrip())
 
     if len(matches) > 0:
